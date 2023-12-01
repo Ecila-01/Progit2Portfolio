@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../styles/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Learnings</title>
+    </head>
+    <body>
+        <div class = "container">
+            <div class="navbar">
+                    <a href="../index.html">Home</a>
+                    <b><a href = "learnings.html"> Learnings </a></b>
+                    <a href="aboutMe.html"> About Me </a>
+            </div>
+            <h1> TOPICS </h1>
+                <p>Here are the topics i've learned in PROGIT2 along with all my works.</p>
+            <div class="gallery">
+                <div class="pic 1" id = "product1">
+                        <img src = "../src/methods.jpg">
+                        <div class="button"><a href="#popup1"> Details </a></div>
+                </div>
+                <div class="pic 2" id = "product2">
+                        <img src = "../src/CharString.jpg">
+                        <div class="button"><a href="#popup2"> Details </a></div>
+                </div>
+                <div class="pic 3" id = "product3">
+                        <img src = "../src/oop.png">
+                        <div class="button"><a href="#popup3"> Details </a></div>
+                </div>
+                <div class="pic 4" id = "product4">
+                        <img src = "../src/aa.png">
+                        <div class="button"><a href="#popup4"> Details </a></div>
+                </div>                 
+            </div>
+        </div> 
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <center><img src = "../src/port1.jpg"></center>
+                <br><br>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h2>Methods</h2>
+                    <p>Methods block of codes that can be call by its name to perform the content or the body of the actual method. The use of methods is to avoid repetition of that specific code since all you need to do is call the method name and it will perform exactly what was written on the method's body </p>
+                    <br>
+                    <h2>How to use methods</h2>
+                    <p>
+                        Declaration: <br> &nbsp;&nbsp;&nbsp;&lt;modifiers&gt; &lt;return type&gt; &lt;method name&gt;(parameters){
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &lt;Block of Codes&gt;<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+                        Example:<br>&nbsp;&nbsp;&nbsp; public static void sayHello(){
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;System.out.println("Hello, you succesfully called the method");<br>
+                            &nbsp;&nbsp;&nbsp;}
+                        <br><br>
+                        Method Call: <br> &nbsp;&nbsp;&nbsp; &lt;method name&gt;(parameters); <br>
+                        Example:<br>&nbsp;&nbsp;&nbsp; sayHello();
+                        <br>
+                        Output: <br>
+                        &nbsp;&nbsp;&nbsp; Hello, you succesfully called the method
+                    </p>
+                    <h2>Learning Outcome:</h2>
+                    <p>Methods have been an important part of this course. Throughout the semester, we have used it in various ways. Using methods save us some time by being flexible and have become a useful learnings overall. The upcoming lessons also took advantage of methods as it was highly used in object-oriented programming</p>
+                </div>
+            </div>
+        </div>
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                <center><img src = "../src/port2.png"></center>
+                <br><br>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h2>Character and String Builders</h2>
+                    <p>They are pre-defined methods by java. This makes it easier as you don't need to make these methods yourselves. These pre-defined methods are used to work on both the character and string data type. A few example would be making a character or a string into an all capital case or lower case, determining the number of characters in a string, or replacing a certain character of a string with another</p>
+                    <br>
+                    <h2>Learning Outcome:</h2>
+                    <p>Learned that the methods we are creating and this works just the same, the only difference is that these pre-defined methods are invisible but we can use it as a part of java</p>
+                </div>
+            </div>
+        </div>
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <center><img src = "../src/port3.png"></center>
+                <br><br>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h2>Object Oriented Programming</h2>
+                    <p>Contains 2 important things: Class and Object. Class is the basis or the template that contains field and attributes, it also can contains method that can be called through the object. The object is the instance of the class. If the class is the template, the object would be the value of it's content</p>
+                    <br>
+                    <h2>How to use Class</h2>
+                    <p>
+                        Declaration: <br> &nbsp;&nbsp;&nbsp;&lt;modifiers&gt; class &lt;Class Name&gt;{
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &lt;Block of Codes (data fields, constructors or methods)&gt;<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+                        Example:<br>&nbsp;&nbsp;&nbsp; public class StudentRecord{
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; //Blocks of Code<br>
+                            &nbsp;&nbsp;&nbsp;}
+                        <br><br>
+                        Class generally take advantages of methods. Mutators and Accesors are two of them. A mutator is use to set a value to a specific variable while an accesor returns a value. A constructor on other hand would be use to establish an object. Know that a constructor should be named the same as the class name, a mutator's name starts with "set" and accessor's starts with "get".
+                    </p>
+                    <h2>How to use the Object</h2>
+                        Declaration: <br> &nbsp;&nbsp;&nbsp;&lt;Class / constructor Name&gt; &lt;variable name&gt; = new &lt;Class Name&gt;(&lt;parameters&gt;) <br>
+                        Example:<br>&nbsp;&nbsp;&nbsp; StudentRecord student = new StudentRecord();
+                    <h2>Learning Outcome:</h2>
+                    <p>OOP have been my most important lessons so far, we have use it throughout the semester, oop also has made use of all the lessons i've learned so far and combined it together to create a whole new programming technique</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
