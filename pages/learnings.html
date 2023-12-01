@@ -30,9 +30,21 @@
                         <div class="button"><a href="#popup3"> Details </a></div>
                 </div>
                 <div class="pic 4" id = "product4">
-                        <img src = "../src/oop.png">
+                        <img src = "../src/overloading.png">
                         <div class="button"><a href="#popup4"> Details </a></div>
-                </div>                 
+                </div>  
+                <div class="pic 5" id = "product5">
+                    <img src = "../src/inheritance.jpg">
+                    <div class="button"><a href="#popup5"> Details </a></div>
+                </div>     
+                <div class="pic 6" id = "product6">
+                    <img src = "../src/constructorInheritance.jpg">
+                    <div class="button"><a href="#popup6"> Details </a></div>
+                </div>   
+                <div class="pic 7" id = "product7">
+                    <img src = "../src/abstractInterface.png">
+                    <div class="button"><a href="#popup7"> Details </a></div>
+                </div>          
             </div>
         </div> 
         <div id="popup1" class="overlay">
@@ -103,6 +115,100 @@
                         Example:<br>&nbsp;&nbsp;&nbsp; StudentRecord student = new StudentRecord();
                     <h2>Learning Outcome:</h2>
                     <p>OOP have been my most important lessons so far, we have use it throughout the semester, oop also has made use of all the lessons i've learned so far and combined it together to create a whole new programming technique</p>
+                </div>
+            </div>
+        </div>
+        <div id="popup4" class="overlay">
+            <div class="popup">
+                <center><img src = "../src/port4.jpg"></center>
+                <br><br>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h2>Overloading</h2>
+                    <p> 
+                        Overloading can be done on both methods and constructors. We can put different block of codes on the same methods for different functionality. This can be done by overloading. The key for overloading is the parameters they received. We can create multiple methods or construcctors of the same name but with different number of parameters or different data types of their parameters. This way, we can just have the same method names and the method would handle it depending on what paramters thrown at them. Know that, there are some methods that cannot be overriden and those are: static method, final method or methods within final class.
+                    </p>
+                    <br>
+                    <h2>Work Example</h2>
+                    <center><img src = "../src/work1.jpg"></center>
+                    <p>
+                        There are multiple methods here both named deductions but they both have different parameters. This has 2 functions, the first one has one parameter and this parameter will be subtracted to the salary. Same with the first one, the 2nd one has bills that will be subtracted to their salary but in this case, there are 2 bills unlike the first one that has 1 bill.
+                    </p>
+                    <h2>Learning Outcome:</h2>
+                    <p>Like all the lessons throughout the course, this has been a huge part of Object-Oriented Programming. It made use of methods and constructors so we can program it to be able to handle different arguments.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="popup5" class="overlay">
+            <div class="popup">
+                <center><img src = "../src/port5.jpg"></center>
+                <br><br>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h2>Inheritance Part 1</h2>
+                    <p> 
+                        Java can have inheritance, this makes it so multiple class can have connections. There are two key classes in inheritance: Superclass (Parent) or Subclass (Child). A superclass can have multiple child but a subclass cannot have multiple parents. The way this works is a superclass is like a template of some sort, it can contains data fields, methods and constructors. The subclass will then inherit the template of the superclass but on this subclass, we can further put more datafields and constructor to make the data "more specific". They can also inherit the methods and make use of it or override it and create a different function for the method altogether
+                    </p>
+                    <br>
+                    <h2>Work Example</h2>
+                    <center><img src = "../src/work2.jpg"></center>
+                    <p>
+                        In this code, the superclass would be Person and the subclass would be Student. The Student class would inherit the method named display() from the Person Class but on that Student class, we also have that same method of the same name. The block of codes inside the method are different hence the Student class' method would override the code from Person class' method. In this particular code, we made an object out of the Student Class and called the display() method. The output would then be the overriden method from Student Class.
+                    </p>
+                    <h2>Learning Outcome:</h2>
+                    <p>This made us of everything we learned so far. Through this, we can use methods, method overridings, constructors, constructor overriding and creating a specific object out of the Class
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="popup6" class="overlay">
+            <div class="popup">
+                <center><img src = "../src/port6.jpg "></center>
+                <br><br>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h2>Inheritance Part 2</h2>
+                    <p> 
+                        In the case of constructors, if we instantiate an object and call the constructor of the subclass. The program would first go through the superclass' own constructors. A subclass can also explicitly call a constructor of its
+                        immediate superclass and this is done by using the keyword "super". A super constructor call in the constructor of a subclass will result in the execution of relevant constructor from the superclass, based on the arguments passed. This is done by typing super(parameters); at the start of the subclass' constructor. Another use of super is like the "this" keyword in which we assigned value to a variable. The difference between these two is the "this" keyword can be use on the specific class while the "super" keyword can be done on the subclass to assign the varaible on the super class.
+                    </p>
+                    <br>
+                    <h2>Work Example</h2>
+                    <center>
+                        <img src = "../src/work3.jpg"> <br>
+                        <img src = "../src/work4.jpg">
+                    </center>
+                    <p>
+                        In this code, the superclass would be Padala and the subclass would be InsuredPadala. This determines the cost of shipping based on the received data, which are "paraan" at "timbang". The Padala class would just normally calculate it but on InsuredClass, it would also take the insurance into the calculation. The displayPadala() on super class would show all the informations. To avoid repetition, the displayPadala() on the sub class would just call the displayPadala() of the super class using the "super" keyword.
+                    </p>
+                    <h2>Learning Outcome:</h2>
+                    <p>This is another great lessons, it seems to be that everything we've learned are piling up to hone us to be a great programmer. Constructors are a big part of OOP as we take advantage of it to be able to create objects out of the class.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="popup7" class="overlay">
+            <div class="popup">
+                <center><img src = "../src/port7.webp "></center>
+                <br><br>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h2>Inheritance Part 3</h2>
+                    <p> 
+                        Interface and Abstract are something like a parent class, they can work as a template and contains block of codes that can be used by those who inherits it. 
+                        <br><br>
+                        Abstract is a class and would be on the top of the hierarchy when it come to our codes. Abstract is a class that cannot be instantiated. It can contain data fields and methods. The methods it can contain can either be abstract or nonabstract methods. An abstract methods don't have a body and would just be initialized. The class who inherits this abstract class would have to override all the abstract methods inside it.
+                        
+                        <br><br>
+                        Inteface on other hand is not a class but works almost just like it, s a special kind of block containing method signatures (and possibly constants) only. You can initialize a method here but it must not have a body and must be overriden by any class who implements it. An interface is independent and does not have a direct relationship with the classes. A class can implements multiple interface unlike the inheritance of superclass
+                    </p>
+                    <br>
+                    <h2>Learning Outcome:</h2>
+                    <p>
+                        Our final lesson for the semester, both the abstract and interface are useful learnings. These made the codes more managable and easily maintanable for us specially on program that uses thousands of lines or hundred of files
+                    </p>
                 </div>
             </div>
         </div>

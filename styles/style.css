@@ -80,7 +80,6 @@ h1::before{
 }  
 /* HOME CONTENT */
 .homeBackground{
- 
     background-image: url(../src/bookstore1.jpg);
     opacity: .9;
     filter: brightness(75%);
@@ -634,4 +633,13 @@ h1::before{
 }
 #product4::before{
     content:"Product 4";
+}
+#product5::before{
+    content:"Inheritance Part 1: Methods";
+}
+#product6::before{
+    content:"Inheritance Part 2: Constructors";
+}
+#product7::before{
+    content:"Inheritance Part 3: Abstract & Interface";
 }
