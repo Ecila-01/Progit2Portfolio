@@ -19,7 +19,9 @@ body{
     z-index: 2;
     max-width: 2000px;
 }
-  
+@media (min-width: 900px) {
+    .navbar { width: 95%; }
+}
 .navbar a {
     background-color:rgb(255, 255, 255);
     float: left;
@@ -234,12 +236,13 @@ h1::before{
     display: flex;
 }
 .contactLeft{
-    flex-basis: 50%;
+    flex-basis: 90%;
     padding: 40px 60px;
     color: black;
 }
+
 .contactRight{
-    flex: 40%;
+    flex: 30%;
     padding: 40px;
     background-color: white;
     color: black;
@@ -425,15 +428,23 @@ h1::before{
 /* projects page */
 
 .gallery{
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
+}
+@media (min-width: 900px) {
+    .gallery { grid-template-columns: repeat(1, 1fr); }
+}
+@media (min-width: 1000px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1600px) {
+    .gallery { grid-template-columns: repeat(3, 1fr); }
 }
 .pic{
     position: relative;
-    height: 350px;
+    height: 330px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px #D3D3D3;
 }
@@ -441,6 +452,7 @@ h1::before{
     border-radius: 10px;
     height: 100%;
     transition: .5s;
+
 }
 .pic::before{
     position: absolute;
